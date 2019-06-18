@@ -22,7 +22,7 @@ block content
           strong
             = user.username
           | &nbsp;
-          a(href="/users/" + user.id + "/destroy", class="btn btn-xs btn-warning") delete
+          a(href="/users/" + user.id + "/destroy", class="btn btn-xs btn-danger") delete
           ul
             li
               | Create task
@@ -47,5 +47,6 @@ block content
                   div(class="form-group")
                     input(type="text", name="tag", placeholder="Edit Tag", class="input-sm form-control fields")
                     br
-                    input(type="submit", class="btn btn-xs btn-primary fields")
-                a(href="/users/" + user.id + "/tasks/" + task.id + "/destroy",  class="btn btn-xs btn-warning") delete
+                    input(type="submit", class="btn btn-xs btn-primary" value="Edit Tag")
+                a(href="/users/" + user.id + "/tasks/"+task.id+"/destroy", class="btn btn-xs btn-danger") delete
+                

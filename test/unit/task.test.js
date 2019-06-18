@@ -21,8 +21,19 @@ describe("models/task", function() {
             title: "a title",
             tag: "a tag",
             UserId: user.id
-          }).then(function(task) {
-            expect(task.title).to.equal("a title");
+          }).then(task => {
+            return this.Task.update(
+              {
+                tag: "updated tag"
+              },
+              {
+                where: {
+                  id: task.id
+                }
+              }
+            ).then(function(task) {
+              expect(task[0]).to.equal(1);
+            });
           });
         });
     });

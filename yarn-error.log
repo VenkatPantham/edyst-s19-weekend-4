@@ -1,8 +1,8 @@
 Arguments: 
-  /usr/bin/node /usr/share/yarn/bin/yarn.js init
+  /usr/bin/node /usr/share/yarn/bin/yarn.js add serve-favicon
 
 PATH: 
-  /home/venkat-pantham/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+  /home/venkat-pantham/.local/bin:/home/venkat-pantham/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
 
 Yarn version: 
   1.16.0
@@ -14,17 +14,7 @@ Platform:
   linux x64
 
 Trace: 
-  Error: canceled
-      at Interface.<anonymous> (/usr/share/yarn/lib/cli.js:125850:13)
-      at Interface.emit (events.js:189:13)
-      at Interface._ttyWrite (readline.js:783:16)
-      at ReadStream.onkeypress (readline.js:168:10)
-      at ReadStream.emit (events.js:189:13)
-      at emitKeys (internal/readline.js:424:14)
-      at emitKeys.next (<anonymous>)
-      at ReadStream.onData (readline.js:1022:36)
-      at ReadStream.emit (events.js:189:13)
-      at addChunk (_stream_readable.js:284:12)
+  Error: EACCES: permission denied, open '/home/venkat-pantham/Desktop/Edyst/express-example/yarn.lock'
 
 npm manifest: 
   {
@@ -48,7 +38,7 @@ npm manifest:
       "pug": "^2.0.0-rc.4",
       "sequelize": "^3.23.6",
       "sequelize-cli": "^3.1.0",
-      "serve-favicon": "~2.3.0",
+      "serve-favicon": "^2.3.0",
       "sqlite3": "^4.0.8"
     },
     "devDependencies": {
